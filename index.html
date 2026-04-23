@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SANS MERCANTILE | DOCS COMING SOON</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+
+            --color-orange: #fc7642; /* Your brand gold/orange */
+
+            --color-silver: #f0f0f0; /* Your brand silver */
+
+        }
+
+
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+            background-color: #050505;
+
+            color: #ffffff;
+
+            overflow: hidden;
+
+        }
+
+
+
+        /* Updated Logo Styles */
+
+        .logo {
+
+            font-size: 1.75rem;
+
+            font-weight: 800;
+
+            letter-spacing: -0.02em;
+
+        }
+
+
+
+        .logo span.sans {
+
+            color: var(--color-orange);
+
+        }
+
+
+
+        .logo span.mercantile {
+
+            color: var(--color-silver);
+
+        }
+
+
+
+        /* Updated Navigation Styles */
+
+        nav a {
+
+            color: var(--color-silver);
+
+            margin: 0 1rem;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            display: inline-block;
+
+        }
+
+
+
+        nav a:hover {
+
+            color: var(--color-orange);
+
+            transform: translateY(-2px);
+
+        }
+
+
+
+        .gold-glow {
+
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
+
+        }
+
+
+
+        .gradient-text {
+
+            background: linear-gradient(135deg, #ffffff 0%, var(--color-silver) 100%);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+
+
+
+        .nexus-grid {
+
+            background-image: radial-gradient(var(--color-orange) 0.5px, transparent 0.5px);
+
+            background-size: 40px 40px;
+
+            opacity: 0.05;
+
+        }
+
+
+
+        @keyframes pulse-gold {
+
+            0%, 100% { opacity: 0.3; }
+
+            50% { opacity: 0.6; }
+
+        }
+
+
+
+        .animate-pulse-slow {
+
+            animation: pulse-gold 4s infinite ease-in-out;
+
+        }
+
+
+
+        .blur-circle {
+
+            position: absolute;
+
+            width: 40vw;
+
+            height: 40vw;
+
+            border-radius: 50%;
+
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+
+            filter: blur(80px);
+
+            z-index: -1;
+
+        }
+
+    </style>
+
+</head>
+
+<body class="relative min-h-screen flex flex-col">
+
+    <!-- Background Elements -->
+
+    <div class="fixed inset-0 nexus-grid"></div>
+
+    <div class="blur-circle top-[-10%] left-[-10%] animate-pulse-slow"></div>
+
+    <div class="blur-circle bottom-[-10%] right-[-10%] animate-pulse-slow"></div>
+
+
+
+    <!-- Header with updated Logo and Nav -->
+
+    <header class="relative z-20 w-full py-8 px-12 flex justify-between items-center">
+
+        <div class="logo">
+
+            <span class="sans">SANS</span><span class="mercantile">MERCANTILE</span>
+
+        </div>
+
+        <nav class="hidden md:flex">
+
+            <a href="https://sansmercantile.com">Home</a>
+
+            <a href="#" class="opacity-50 cursor-not-allowed">Repository</a>
+
+            <a href="#" class="opacity-50 cursor-not-allowed">API</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="relative z-10 flex-grow w-full flex flex-col items-center justify-center px-6 text-center">
+
+        <!-- Logo/Header Icon -->
+
+        <div class="mb-8 flex flex-col items-center justify-center">
+
+            <div class="w-16 h-16 rounded-full border-2 border-[#d4af37] flex items-center justify-center mb-6 gold-glow animate-bounce">
+
+                <div class="w-10 h-10 bg-[#d4af37] rounded-full"></div>
+
+            </div>
+
+            <h2 class="tracking-[0.5em] text-[#d4af37] text-xs font-semibold uppercase mb-4">Reimagine • Rebuild • Transcend</h2>
+
+        </div>
+
+
+
+        <!-- Hero Text -->
+
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6 gradient-text">
+
+            DOCS COMING SOON
+
+        </h1>
+
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+
+            We are currently synchronizing the technical specifications for the 21 System Constellation. Intelligent documentation for global governance and trade is arriving shortly.
+
+        </p>
+
+
+
+        <!-- CTA / Form -->
+
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center w-full max-w-md mx-auto">
+
+            <input 
+
+                type="email" 
+
+                placeholder="Enter access email..." 
+
+                class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-[#d4af37] transition-all text-sm backdrop-blur-sm text-white"
+
+            >
+
+            <button class="w-full md:w-auto whitespace-nowrap bg-[#d4af37] text-black font-bold px-8 py-4 rounded-xl hover:bg-[#c4a030] transition-all text-sm uppercase tracking-wider">
+
+                Notify Me
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+    <footer class="relative z-20 pb-12 w-full text-center">
+
+        <div class="mb-6 flex justify-center gap-8 text-[10px] text-gray-500 uppercase tracking-widest font-semibold">
+
+            <span>All Systems Operational</span>
+
+            <span class="text-[#d4af37]">●</span>
+
+            <span>v.2.1.0 Node</span>
+
+        </div>
+
+        <p class="text-[10px] text-gray-600 tracking-[0.2em] uppercase">
+
+            © 2026 Sans Mercantile
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
